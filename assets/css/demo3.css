@@ -1,0 +1,8 @@
+.menubelow{
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Images/trial1.jpg);
+    background-size: cover;
+  }
