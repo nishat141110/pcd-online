@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PCD-Online Login</title>
     <link rel="stylesheet" href="assets/css/demo3.css">
 </head>
 <body>
     <div class="menubelow">
-
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Enter Email" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    <button type="button" class="btn" onclick="openSignUP()">Go to Sign Up</button>
+                    <a href="">Forget Password</a>
+                </div>
+                <div class="card-back">
+                    <h2>SIGN UP</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Full Name" required>
+                        <input type="text" class="input-box" placeholder="Enter Email" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">Go to Login</button>
+                    <a href="">Forget Password</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        var card = document.getElementById("card");
+
+        function openSignUP(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
 </body>
 </html>
