@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -34,12 +39,37 @@
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         
+                
+
         <li class="has-submenu"><a href="#section4">Courses</a>
           <ul class="sub-menu">
-            <li><a href="#section2">Business & Management</a></li>
-            <li><a href="#section3">Coding & Computing</a></li>
-            <li><a href="#section3">Applied Sci-Tech</a></li>
-            <li><a href="#section3">Language & Culture</a></li>
+            <li class="has-submenu"><div class="row"><a href="#section2">Business & Management <i class='fa fa-angle-right fa-fw'></i></a> </div>
+            
+              
+            <ul class="sub-menu">
+              <li><a href="#section2">Marketing</a></li>
+              <li><a href="#section2">Finance</a></li>
+            </ul>
+            </li>
+            <li class="has-submenu"><div class="row"><a href="#section3">Coding & Computing <i class='fa fa-angle-right fa-fw'></i></a></div>
+              
+              <ul class="sub-menu">
+                <li><a href="#section2">Data Mining </a></li>
+                <li><a href="#section2">Programming</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"> <div class="row"><a href="#section3">Applied Sci-Tech<i class='fa fa-angle-right fa-fw'></i></a></div>
+              <ul class="sub-menu">
+                <li><a href="#section2">Rocket Science</a></li>
+                <li><a href="#section2">Astro Physics</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"><div class="row"><a href="#section3">Language & Culture<i class='fa fa-angle-right fa-fw'></i></a></div>
+            <ul class="sub-menu">
+              <li><a href="#section2">Music</a></li>
+              <li><a href="#section2">Sanskrit</a></li>
+            </ul>
+            </li>
           </ul>
         </li>
         <li class="input">
@@ -516,6 +546,15 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      </script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
