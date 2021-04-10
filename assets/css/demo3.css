@@ -5,19 +5,19 @@
 }
 .menubelow{
     width: 100%;
-    height: 600px;
+    height: 800px;
     font-family: sans-serif;
-    background-image: url(../../Images/trial1.jpg);
+    background-image: url(../../Images/oB6X2ylFsP.jpg);
     background-size: cover;
     display: flex;
     align-content: center;
     justify-content: center;
   }
   .card{
-    width: 350px;
-    height: 500px;
-    margin-top: 60px;
-    margin-left: 780px;
+    width: 600px;
+    height: 560px;
+    margin-top: 100px;
+    
     perspective: 1000px;
   }
   .inner-box{
@@ -34,10 +34,11 @@
     height: 100%;
     background-position: center;
     background-size: cover;
-    background: rgba(0,0,0,.8);
+    background: rgb(57, 87, 143);
     padding: 55px;
     box-sizing: border-box;
     border-radius: 10px;
+    border: 2px solid #fc3;
     box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.3);
     backface-visibility: hidden;
   }
@@ -52,10 +53,10 @@
     color: #fff;
   }
   .input-box{
-    width: 100%;
+    width: 70%;
     background: transparent;
     border: 1px solid #fff;
-    margin: 6px 0;
+    margin: 10px 0;
     height: 32px;
     border-radius: 20px;
     padding: 0 10px;
@@ -63,13 +64,14 @@
     outline: none;
     text-align: center;
     color: #fff;
+    margin-left: 55px;
   }
   ::placeholder{
     color: #fff;
     font-size: 12px;
   }
   button{
-    width: 100%;
+    width: 70%;
     background: transparent;
     border: 1px solid #fff;
     margin: 35px 0 10px;
@@ -81,6 +83,7 @@
     outline: none;
     color: #fff;
     cursor: pointer;
+    margin-left: 55px;
   }
   .submit-btn{
     position: relative;
@@ -104,8 +107,8 @@
     color: #fff;
   }
   .check-box{
-    margin-left: 30px;
-    margin-top: 10px;
+    margin-left: 130px;
+    margin-top: 20px;
   }
   .card .btn{
     margin-top: 50px;
